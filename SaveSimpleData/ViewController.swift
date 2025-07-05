@@ -1,21 +1,27 @@
-//
-//  ViewController.swift
-//  SaveSimpleData
-//
-//  Created by Macbook on 6.07.2025.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var txtNote: UITextField!
+    @IBOutlet weak var txtTime: UITextField!
+    @IBOutlet weak var lblNote: UILabel!
+    @IBOutlet weak var lblTime: UILabel!
+    
+    @IBAction func btnSaveNote(_ sender: Any) {
+        lblNote.text = txtNote.text
+        lblTime.text = txtTime.text
     }
     
-    var newInput = "J.Henimex"
-
-
+    @IBAction func btnDeleteNote(_ sender: Any) {
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    func saveData(data:String){
+        
+    }
 }
 
