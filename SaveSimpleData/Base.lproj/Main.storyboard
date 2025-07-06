@@ -16,53 +16,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type the note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lzv-8u-Tsf">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type the note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lzv-8u-Tsf">
                                 <rect key="frame" x="16" y="114" width="361" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time definition for your note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cjq-gf-4wn">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time definition for your note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cjq-gf-4wn">
                                 <rect key="frame" x="16" y="165" width="361" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbg-AB-Bi5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbg-AB-Bi5">
                                 <rect key="frame" x="16" y="207" width="102" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save Note"/>
                                 <connections>
                                     <action selector="btnSaveNote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5C-pu-9H0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOf-ZZ-YpS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOf-ZZ-YpS">
                                 <rect key="frame" x="262" y="207" width="115" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Delete Note"/>
                                 <connections>
                                     <action selector="btnDeleteNote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MuQ-wx-gIa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GZ-oa-RwI">
-                                <rect key="frame" x="16" y="287" width="57" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GZ-oa-RwI">
+                                <rect key="frame" x="16" y="287" width="361" height="21.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAG-eQ-oh6">
-                                <rect key="frame" x="16" y="351" width="58" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAG-eQ-oh6">
+                                <rect key="frame" x="16" y="345.66666666666669" width="361" height="21.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3GZ-oa-RwI" firstAttribute="leading" secondItem="GAG-eQ-oh6" secondAttribute="leading" id="2yS-VG-pNe"/>
+                            <constraint firstItem="3GZ-oa-RwI" firstAttribute="top" secondItem="xbg-AB-Bi5" secondAttribute="bottom" constant="45" id="3x9-Iu-O3Q"/>
+                            <constraint firstItem="GAG-eQ-oh6" firstAttribute="top" secondItem="3GZ-oa-RwI" secondAttribute="bottom" constant="36.999999999999943" id="5vZ-eS-u0W"/>
+                            <constraint firstItem="xbg-AB-Bi5" firstAttribute="leading" secondItem="3GZ-oa-RwI" secondAttribute="leading" id="FtF-S0-Fxv"/>
+                            <constraint firstItem="lzv-8u-Tsf" firstAttribute="leading" secondItem="cjq-gf-4wn" secondAttribute="leading" id="T4v-ED-h3w"/>
+                            <constraint firstItem="lzv-8u-Tsf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VOa-40-jba"/>
+                            <constraint firstItem="cjq-gf-4wn" firstAttribute="top" secondItem="lzv-8u-Tsf" secondAttribute="bottom" constant="17" id="WB6-II-SRj"/>
+                            <constraint firstItem="cjq-gf-4wn" firstAttribute="trailing" secondItem="tOf-ZZ-YpS" secondAttribute="trailing" id="b8N-LB-JiC"/>
+                            <constraint firstItem="lzv-8u-Tsf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="e6i-1y-nFj"/>
+                            <constraint firstItem="xbg-AB-Bi5" firstAttribute="top" secondItem="cjq-gf-4wn" secondAttribute="bottom" constant="8" id="esj-ka-X7P"/>
+                            <constraint firstItem="lzv-8u-Tsf" firstAttribute="trailing" secondItem="cjq-gf-4wn" secondAttribute="trailing" id="kV3-kr-7l7"/>
+                            <constraint firstItem="cjq-gf-4wn" firstAttribute="leading" secondItem="xbg-AB-Bi5" secondAttribute="leading" id="mLB-qa-CIT"/>
+                            <constraint firstItem="lzv-8u-Tsf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="neV-Vb-8tG"/>
+                            <constraint firstItem="3GZ-oa-RwI" firstAttribute="trailing" secondItem="GAG-eQ-oh6" secondAttribute="trailing" id="rWP-VF-v3P"/>
+                            <constraint firstItem="tOf-ZZ-YpS" firstAttribute="trailing" secondItem="3GZ-oa-RwI" secondAttribute="trailing" id="skH-pi-hZb"/>
+                            <constraint firstItem="xbg-AB-Bi5" firstAttribute="baseline" secondItem="tOf-ZZ-YpS" secondAttribute="baseline" id="x4c-4W-dsq"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lblNote" destination="3GZ-oa-RwI" id="v1c-PH-Eef"/>
