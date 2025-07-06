@@ -50,16 +50,30 @@ class ViewController: UIViewController {
     }
     
     func deleteData(){
-        UserDefaults.standard.removeObject(forKey: "note")
-        UserDefaults.standard.removeObject(forKey: "time")
+        var confirm = UIAlertController(title: "Are You Sure", message: "Saved Data Will Be Removed !", preferredStyle: .alert)
         
-        clearEnteranceAreas()
-        clearLabels()
+        var confirmButton = UIAlertAction(title: "Delete", style: UIAlertAction.Style.destructive) { (UIAlertAction) in
+            UserDefaults.standard.removeObject(forKey: "note")
+            UserDefaults.standard.removeObject(forKey: "time")
+            
+            self.clearEnteranceAreas()
+            self.clearLabels()
+        }
+        
+        var cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
+            print("Cancalled")
+        }
+        
+        confirm.addAction(confirmButton)
+        confirm.addAction(cancelButton)
+        
+        self.present(confirm, animated: true, completion: nil)
     }
     
     func clearEnteranceAreas(){
         txtNote.text = ""
         txtTime.text = ""
+        txtNote.becomeFirstResponder()
     }
     
     func clearLabels(){
